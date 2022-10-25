@@ -21,3 +21,10 @@ const images = [
 
 // Усі елементи галереї повинні додаватися в DOM за одну операцію додавання.
 // Додай мінімальне оформлення галереї флексбоксами або грідами через CSS класи.
+const listElements = document.querySelector(".gallery");
+for (const img of images) {
+  listElements.insertAdjacentHTML(
+    "afterbegin",
+    `<li><img src="${img.url}" alt="${img.alt}"></li>`
+  );
+}

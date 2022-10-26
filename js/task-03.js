@@ -24,6 +24,9 @@ const images = [
 const listElements = document.querySelector(".gallery");
 const arrListEl = [];
 for (const img of images) {
-  arrListEl.push(`<li><img src="${img.url}" alt="${img.alt}"></li>`);
+  arrListEl.push(
+    `<li><img  src="${img.url}" alt="${img.alt}" width = 300px></li> `
+  );
 }
-listElements.insertAdjacentHTML("afterbegin", arrListEl);
+const newListEl = arrListEl.map((elem) => elem).join("");
+listElements.insertAdjacentHTML("afterbegin", newListEl);

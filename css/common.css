@@ -26,8 +26,6 @@ button {
 /* Images style (Task-03) */
 .gallery {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  gap: 50px;
 }

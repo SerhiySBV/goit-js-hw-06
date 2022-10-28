@@ -35,6 +35,7 @@ const formUserEl = (event) => {
     password: password.value,
   };
   console.table(aboutUser);
+  event.currentTarget.reset();
 };
 
 loginFormEl.addEventListener("submit", formUserEl);

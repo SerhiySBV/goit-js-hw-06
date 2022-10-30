@@ -9,8 +9,6 @@ const counterEl = () => {
     imputEl.classList.remove("valid");
     imputEl.classList.add("invalid");
   }
-  console.log(imputEl.value.length);
-  console.log(+imputEl.dataset.length);
 };
 
 imputEl.addEventListener("blur", counterEl);
